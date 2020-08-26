@@ -1,0 +1,216 @@
+@import "src/assets/styles/global";
+
+.wrapper {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #000000;
+  background: rgba(0, 0, 0, 0.59);
+  backdrop-filter: blur(3px);
+  z-index: 999;
+
+  .container {
+    width: 1366px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      width: 320px;
+      padding: 10px 0;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .navmenu {
+      display: flex;
+
+      a {
+        position: relative;
+        text-align: center;
+        margin-right: 24px;
+        font-family: $Gotham;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        cursor: pointer;
+        transition: .3s;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &::before {
+          display: block;
+          content: attr(name);
+          font-weight: bold;
+          height: 0;
+          overflow: hidden;
+          visibility: hidden;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: -4px;
+          left: 0;
+          height: 2px;
+          width: 100%;
+          background: #00FFE0;
+          border-radius: 6px;
+          opacity: 0;
+          transition: .3s;
+        }
+
+        &:hover {
+          font-weight: bold;
+        }
+      }
+
+      .active {
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .humburgerMenu,
+  .closeWrap {
+    display: none;
+  }
+}
+
+//@media screen and (max-width: $Tablet) {
+//  .wrapper {
+//    height: (290px/$val);
+//  }
+//
+//  .container {
+//    padding: (25px/$val) (200px/$val) 0;
+//
+//    .logo {
+//      width: (81px/$val);
+//    }
+//
+//    .navmenu {
+//      padding-left: (40px/$val);
+//
+//      a {
+//        margin-left: (80px/$val);
+//        font-size: (30px/$val);
+//        line-height: (44px/$val);
+//      }
+//    }
+//  }
+//}
+//
+//@media screen and (max-width: $Mobile) {
+//  .wrapper {
+//    position: fixed;
+//    height: 43px;
+//    z-index: 99;
+//  }
+//
+//  .container {
+//    padding: 0 20px 0;
+//
+//    .logo {
+//      width: 32px;
+//    }
+//
+//    .navmenu {
+//      display: flex;
+//      flex-direction: column;
+//      justify-content: center;
+//      width: 100%;
+//      padding-left: 0;
+//      position: absolute;
+//      top: 0;
+//      left: 0;
+//      background: #221C2F;
+//      z-index: 100;
+//      transition: .5s;
+//      transform: scale(0);
+//
+//      a {
+//        margin-bottom: 20px;
+//        margin-left: 0;
+//        text-align: center;
+//        font-size: 16px;
+//        line-height: 40px;
+//
+//        &:first-child {
+//          margin-top: 50px;
+//        }
+//      }
+//    }
+//
+//    .navmenu.open {
+//      transform: scale(1);
+//    }
+//
+//    .humburgerMenu {
+//      display: flex;
+//      flex-direction: column;
+//      align-items: flex-end;
+//      justify-content: space-between;
+//      width: 32px;
+//      height: 12px;
+//      z-index: 101;
+//
+//      div {
+//        height: 2px;
+//        background: #ffffff;
+//        transition: .3s;
+//
+//        &:nth-child(1) {
+//          width: 21px;
+//        }
+//
+//        &:nth-child(2) {
+//          width: 18px;
+//        }
+//
+//        &:nth-child(3) {
+//          width: 15px;
+//        }
+//      }
+//    }
+//
+//    .humburgerMenu.open {
+//      div {
+//
+//        &:nth-child(1) {
+//          transform: rotate(-45deg) translate(-3px, 3px);
+//          width: 21px;
+//        }
+//
+//        &:nth-child(2) {
+//          //width: 18px;
+//          opacity: 0;
+//        }
+//
+//        &:nth-child(3) {
+//          transform: rotate(45deg) translate(-4px, -4px);
+//          width: 21px;
+//        }
+//      }
+//    }
+//  }
+//
+//  .closeWrap.open {
+//    display: block;
+//    position: fixed;
+//    top: 0;
+//    bottom: 0;
+//    left: 0;
+//    right: 0;
+//  }
+//}

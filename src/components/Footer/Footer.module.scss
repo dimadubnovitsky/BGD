@@ -1,0 +1,240 @@
+@import "../../assets/styles/global";
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(114, 166, 214, 0.55) -32.44%, rgba(114, 166, 214, 0) 80.2%);
+
+  .container {
+    padding-bottom: 50px;
+    width: 1366px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .contacts {
+      padding-top: 40px;
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        font-family: $Nunito;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 65px;
+        color: #FFFFFF
+      }
+
+      .email {
+        padding: 30px 0 25px;
+        display: flex;
+        align-items: center;
+
+        a {
+          margin-left: 25px;
+          font-family: $Nunito;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 32px;
+          line-height: 44px;
+          color: #FFFFFF;
+          text-decoration: none;
+        }
+      }
+
+      .phone {
+        display: flex;
+        align-items: center;
+
+        a {
+          margin-left: 25px;
+          font-family: $Nunito;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 32px;
+          line-height: 44px;
+          color: #FFFFFF;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .social {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title {
+        font-family: $Gotham;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+      }
+
+      .links {
+        padding-top: 25px;
+        display: flex;
+
+        a {
+          margin-right: 32px;
+          border-radius: 50%;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          img {
+            transition: .3s;
+          }
+
+          &:hover {
+            img {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    padding-bottom: 25px;
+    font-family: $Gotham;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}
+
+//@media screen and (max-width: $Tablet) {
+//  .wrapper {
+//    padding-top: (150px/$val);
+//  }
+//
+//  .title {
+//    padding-bottom: (60px/$val);
+//    font-size: (48px/$val);
+//    line-height: (71px/$val);
+//  }
+//
+//  .email {
+//    width: (450px/$val);
+//    height: (65px/$val);
+//
+//    input {
+//      padding: 0 (100px/$val) 0 (20px/$val);
+//      font-size: (16px/$val);
+//      line-height: (24px/$val);
+//    }
+//
+//    .button {
+//      width: (80px/$val);
+//
+//      svg {
+//        width: (41px/$val);
+//        height: (33px/$val);
+//      }
+//    }
+//  }
+//
+//  .emailWrap {
+//
+//    .message {
+//      bottom: (-50px/$val);
+//      font-size: (16px/$val);
+//      line-height: (24px/$val);
+//    }
+//  }
+//
+//  .logo {
+//    width: (257px/$val);
+//    bottom: (140px/$val);
+//    right: (85px/$val);
+//  }
+//
+//  .social {
+//    margin: (225px/$val) 0 (140px/$val);
+//
+//    a {
+//      margin-right: (20px/$val);
+//
+//      svg {
+//        width: (72px/$val);
+//        height: (72px/$val);
+//      }
+//    }
+//  }
+//}
+//
+//@media screen and (max-width: $Mobile) {
+//  .wrapper {
+//    padding-top: 35px;
+//  }
+//
+//  .title {
+//    padding-bottom: 30px;
+//    font-size: 16px;
+//    line-height: 24px;
+//  }
+//
+//  .email {
+//    width: 200px;
+//    height: 30px;
+//
+//    input {
+//      padding: 0 50px 0 10px;
+//      font-size: 12px;
+//    }
+//
+//    .button {
+//      width: 40px;
+//
+//      svg {
+//        width: 20px;
+//      }
+//    }
+//  }
+//
+//  .emailWrap {
+//
+//    .message {
+//      bottom: -25px;
+//      font-size: 12px;
+//    }
+//  }
+//
+//  .logo {
+//    padding-top: 30px;
+//    width: 60px;
+//    position: initial;
+//  }
+//
+//  .social {
+//    margin: 20px 0 30px;
+//    display: flex;
+//    justify-content: center;
+//
+//    a {
+//      margin-right: 8px;
+//
+//      svg {
+//        width: 37px;
+//        height: 37px;
+//      }
+//
+//      &:last-child {
+//        margin-right: 0;
+//      }
+//    }
+//  }
+//}

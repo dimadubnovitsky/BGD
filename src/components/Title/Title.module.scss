@@ -1,0 +1,18 @@
+@import "../../assets/styles/global";
+
+.wrapper {
+  display: flex;
+  align-self: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+
+  .title {
+    padding-left: 24px;
+    font-family: $Gotham;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+  }
+}

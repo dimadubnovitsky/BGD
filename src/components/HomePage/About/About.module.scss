@@ -1,0 +1,154 @@
+@import "../../../assets/styles/global";
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  padding: 212px 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #000000;
+
+  .title {
+    font-family: $Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 75px;
+    line-height: 102px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0 0 28px #00FFE0;
+    z-index: 1;
+
+    span {
+      font-weight: bold;
+      color: #00FFE0;
+    }
+  }
+
+  .description {
+    margin-top: 48px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+
+    .text {
+      position: absolute;
+      top: 32px;
+      width: 1111px;
+      font-family: $Nunito;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 155%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+  }
+
+  .backgroundImg {
+    width: 750px;
+    position: absolute;
+    left: 0;
+    top: 12px;
+    filter: blur(3px);
+
+    img {
+      width: 100%;
+    }
+
+    &:nth-child(2) {
+      transform: scale(-1, 1);
+      left: auto;
+      right: 0;
+    }
+  }
+
+  .blur {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.59);
+  }
+}
+
+
+//@media screen and (max-width: $Tablet) {
+//  .title {
+//    font-size: (64px/$val);
+//    line-height: (95px/$val);
+//  }
+//
+//  .container {
+//    max-width: (1210px/$val);
+//    padding: (30px/$val) 0 (180px/$val);
+//
+//    .content {
+//      padding-bottom: (25px/$val);
+//
+//      img {
+//        width: (590px/$val);
+//      }
+//
+//      .text {
+//        padding-left: (25px/$val);
+//        font-size: (24px/$val);
+//        line-height: (29px/$val);
+//      }
+//
+//      &:nth-child(2n) {
+//
+//        .text {
+//          padding-right: (25px/$val);
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@media screen and (max-width: $Mobile) {
+//
+//  .title {
+//    font-size: 21px;
+//    line-height: 31px;
+//  }
+//
+//  .container {
+//    max-width: 1210px;
+//    padding: 15px 20px 30px;
+//
+//    .content {
+//      display: flex;
+//      flex-direction: column;
+//      align-items: center;
+//
+//      img {
+//        width: 230px;
+//        padding-bottom: 15px;
+//      }
+//
+//      .text {
+//        padding-left: 0;
+//        font-size: 12px;
+//        line-height: 15px;
+//      }
+//
+//      &:nth-child(2n) {
+//        flex-direction: column;
+//
+//        .text {
+//          padding-left: 0;
+//          padding-right: 0;
+//        }
+//      }
+//
+//      &:last-child {
+//        padding-bottom: 0;
+//      }
+//    }
+//  }
+//}
