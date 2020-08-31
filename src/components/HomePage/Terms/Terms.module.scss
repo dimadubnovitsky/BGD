@@ -6,10 +6,23 @@
   flex-direction: column;
   align-items: center;
   background: rgba(0, 0, 0, 0.69);
+  z-index: 1;
 
   .container {
+    position: relative;
     width: 1366px;
     padding-top: 100px;
+
+    .linesImg {
+      width: 557px;
+      position: absolute;
+      left: 520px;
+      top: 540px;
+
+      img {
+        width: 100%;
+      }
+    }
 
     .terms {
       padding-top: 40px;
@@ -23,6 +36,14 @@
         .framesItem {
           position: relative;
           width: max-content;
+
+          .frame {
+            width: 334px;
+
+            img {
+              width: 100%;
+            }
+          }
 
           .description {
             width: 100%;
@@ -77,6 +98,7 @@
 
         .text {
           position: relative;
+          margin-right: 16px;
           padding: 32px 24px;
           width: 550px;
           font-family: $Gotham;
@@ -87,38 +109,59 @@
           text-align: center;
           color: #FFFFFF;
           background: rgba(114, 166, 214, 0.17);
-          backdrop-filter: blur(7px);
+          backdrop-filter: blur(3px);
           border-radius: 3px;
+          z-index: 1;
 
           span {
             color: #00FFE0;
           }
 
-          img {
-            position: absolute;
-          }
-
           .leftTop {
+            position: absolute;
+            width: 72px;
             top: -16px;
             left: -16px;
+
+            img {
+              width: 100%;
+            }
           }
 
           .leftBot {
+            position: absolute;
+            width: 72px;
             bottom: -16px;
             left: -16px;
             transform: rotate(-90deg);
+
+            img {
+              width: 100%;
+            }
           }
 
           .rightTop {
+            position: absolute;
+            width: 72px;
             top: -16px;
             right: -16px;
             transform: rotate(90deg);
+
+            img {
+              width: 100%;
+            }
           }
 
           .rightBot {
+            position: absolute;
+            width: 72px;
             bottom: -16px;
             right: -16px;
             transform: rotate(180deg);
+
+            img {
+              width: 100%;
+            }
           }
         }
 
@@ -180,25 +223,205 @@
   }
 }
 
-//@media screen and (max-width: $Mobile) {
-//  .wrapper {
-//    padding-bottom: 30px;
-//  }
-//
-//  .title {
-//    font-size: 27px;
-//    line-height: 40px;
-//  }
-//
-//  .video {
-//    align-self: center;
-//    margin-top: 20px;
-//    margin-right: 0;
-//
-//
-//    iframe {
-//      width: 260px;
-//      height: 143px;
-//    }
-//  }
-//}
+@media screen and (max-width: $Tablet) {
+  .wrapper {
+
+    .container {
+      width: (1366px/$val);
+      padding-top: (100px/$val);
+
+      .linesImg {
+        width: (557px/$val);
+        left: (520px/$val);
+        top: (540px/$val);
+      }
+
+      .terms {
+        padding-top: (40px/$val);
+
+        .frames {
+
+          .framesItem {
+
+            .frame {
+              width: (334px/$val);
+            }
+
+            .description {
+
+              span {
+                &:first-child {
+                  padding-bottom: (16px/$val);
+                  font-size: (24px/$val);
+                  line-height: (29px/$val);
+                }
+
+                &:last-child {
+                  font-size: (30px/$val);
+                  line-height: (41px/$val);
+                }
+              }
+            }
+
+            &:nth-child(2),
+            &:nth-child(3) {
+              margin-left: (110px/$val);
+            }
+          }
+        }
+
+        .content {
+
+          .text {
+            margin-right: (16px/$val);
+            padding: (32px/$val) (24px/$val);
+            width: (550px/$val);
+            font-size: (24px/$val);
+            line-height: (29px/$val);
+
+            .leftTop {
+              width: (72px/$val);
+              top: (-16px/$val);
+              left: (-16px/$val);
+            }
+
+            .leftBot {
+              width: (72px/$val);
+              bottom: (-16px/$val);
+              left: (-16px/$val);
+            }
+
+            .rightTop {
+              width: (72px/$val);
+              top: (-16px/$val);
+              right: (-16px/$val);
+            }
+
+            .rightBot {
+              width: (72px/$val);
+              bottom: (-16px/$val);
+              right: (-16px/$val);
+            }
+          }
+
+          .button {
+            padding: (20px/$val) (80px/$val);
+            margin-top: (50px/$val);
+            font-size: (24px/$val);
+            line-height: (33px/$val);
+
+            &::before {
+              border-left: (3px/$val) solid #72A6D6;
+              border-top: (3px/$val) solid #72A6D6;
+            }
+
+            &::after {
+              border-right: (3px/$val) solid #72A6D6;
+              border-bottom: (3px/$val) solid #72A6D6;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $Mobile) {
+  .wrapper {
+    background: rgba(0, 0, 0, 0.59);
+
+    .container {
+      width: 100%;
+      max-width: 455px;
+      padding-top: 64px;
+
+      .linesImg {
+        display: none;
+      }
+
+      .terms {
+        padding-top: 32px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        .frames {
+          .framesItem {
+            .frame {
+              width: 160px;
+            }
+
+            .description {
+              span {
+                &:first-child {
+                  padding-bottom: 8px;
+                  font-size: 12px;
+                  line-height: 14px;
+                }
+
+                &:last-child {
+                  font-size: 12px;
+                  line-height: 16px;
+                }
+              }
+            }
+
+            &:nth-child(1),
+            &:nth-child(3) {
+              margin-left: 0;
+            }
+
+            &:nth-child(2),
+            &:nth-child(4) {
+              margin-left: 130px;
+            }
+          }
+        }
+
+        .content {
+          .text {
+            margin-top: 40px;
+            margin-right: 0;
+            padding: 24px 8px;
+            width: 310px;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #FFFFFF;
+            border-radius: 1px;
+
+            .leftTop {
+              width: 40px;
+            }
+
+            .leftBot {
+              width: 40px;
+            }
+
+            .rightTop {
+              width: 40px;
+            }
+
+            .rightBot {
+              width: 40px;
+            }
+          }
+
+          .button {
+            padding: 15px 50px;
+            margin-top: 40px;
+            border-radius: 2px;
+            font-size: 14px;
+            line-height: 19px;
+            border: 2px solid #72A6D6;
+
+            &::before,
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

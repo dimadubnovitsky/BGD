@@ -13,13 +13,17 @@ const Footer = () => (
       <div className={styles.contacts}>
         <div className={styles.title}>Контакты</div>
         <div className={styles.email}>
-          <img src={mail} alt="mail" />
+          <div className={styles.mailImg}>
+            <img src={mail} alt="mail" />
+          </div>
           <a href="mailto:belgamedev@gmail.com">
             <span>belgamedev@gmail.com</span>
           </a>
         </div>
         <div className={styles.phone}>
-          <img src={phone} alt="phone" />
+          <div className={styles.phomeImg}>
+            <img src={phone} alt="phone" />
+          </div>
           <a href="tel:+375336656407">+375 33 665 64 07</a>
         </div>
       </div>
@@ -27,16 +31,24 @@ const Footer = () => (
         <div className={styles.title}>social networks</div>
         <div className={styles.links}>
           <a href="https://twitter.com/BelGameDev?s=09" target="_blank" rel="noreferrer noopener">
-            <img src={twitter} alt="twitter" />
+            <div className={styles.twitter}>
+              <img src={twitter} alt="twitter" />
+            </div>
           </a>
           <a href="https://www.facebook.com/belgamedev" target="_blank" rel="noreferrer noopener">
-            <img src={facebook} alt="facebook" />
+            <div className={styles.facebook}>
+              <img src={facebook} alt="facebook" />
+            </div>
           </a>
           <a href="https://vk.com/belgamedev" target="_blank" rel="noreferrer noopener">
-            <img src={vk} alt="vk" />
+            <div className={styles.vk}>
+              <img src={vk} alt="vk" />
+            </div>
           </a>
           <a href="https://t.me/belgamedev" target="_blank" rel="noreferrer noopener">
-            <img src={telegram} alt="telegram" />
+            <div className={styles.telegram}>
+              <img src={telegram} alt="telegram" />
+            </div>
           </a>
         </div>
       </div>

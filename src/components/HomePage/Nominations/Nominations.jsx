@@ -9,7 +9,9 @@ const Nominations = () => (
       <Title title="Номинации" />
       <div className={styles.nominations}>
         <div className={styles.item}>
-          <img src={frame} alt="frame" />
+          <div className={styles.frame}>
+            <img src={frame} alt="frame" />
+          </div>
           <div className={styles.text}>
             <div className={styles.title}>Номинации в категории для игр в разработке "in Development":</div>
             <div className={styles.description}>
@@ -18,7 +20,9 @@ const Nominations = () => (
           </div>
         </div>
         <div className={styles.item}>
-          <img src={frame} alt="frame" />
+          <div className={styles.frame}>
+            <img src={frame} alt="frame" />
+          </div>
           <div className={styles.text}>
             <div className={styles.title}>
               Номинации в категории для игр,  "Game of the Year 2020":

@@ -33,6 +33,14 @@
         display: flex;
         align-items: center;
 
+        .mailImg {
+          width: 40px;
+
+          img {
+            width: 100%;
+          }
+        }
+
         a {
           margin-left: 25px;
           font-family: $Nunito;
@@ -48,6 +56,14 @@
       .phone {
         display: flex;
         align-items: center;
+
+        .phomeImg {
+          width: 40px;
+
+          img {
+            width: 100%;
+          }
+        }
 
         a {
           margin-left: 25px;
@@ -82,16 +98,24 @@
         padding-top: 25px;
         display: flex;
 
+        .twitter,
+        .facebook,
+        .vk,
+        .telegram {
+          width: 75px;
+
+          img {
+            width: 100%;
+            transition: .3s;
+          }
+        }
+
         a {
           margin-right: 32px;
           border-radius: 50%;
 
           &:last-child {
             margin-right: 0;
-          }
-
-          img {
-            transition: .3s;
           }
 
           &:hover {
@@ -116,125 +140,153 @@
   }
 }
 
-//@media screen and (max-width: $Tablet) {
-//  .wrapper {
-//    padding-top: (150px/$val);
-//  }
-//
-//  .title {
-//    padding-bottom: (60px/$val);
-//    font-size: (48px/$val);
-//    line-height: (71px/$val);
-//  }
-//
-//  .email {
-//    width: (450px/$val);
-//    height: (65px/$val);
-//
-//    input {
-//      padding: 0 (100px/$val) 0 (20px/$val);
-//      font-size: (16px/$val);
-//      line-height: (24px/$val);
-//    }
-//
-//    .button {
-//      width: (80px/$val);
-//
-//      svg {
-//        width: (41px/$val);
-//        height: (33px/$val);
-//      }
-//    }
-//  }
-//
-//  .emailWrap {
-//
-//    .message {
-//      bottom: (-50px/$val);
-//      font-size: (16px/$val);
-//      line-height: (24px/$val);
-//    }
-//  }
-//
-//  .logo {
-//    width: (257px/$val);
-//    bottom: (140px/$val);
-//    right: (85px/$val);
-//  }
-//
-//  .social {
-//    margin: (225px/$val) 0 (140px/$val);
-//
-//    a {
-//      margin-right: (20px/$val);
-//
-//      svg {
-//        width: (72px/$val);
-//        height: (72px/$val);
-//      }
-//    }
-//  }
-//}
-//
-//@media screen and (max-width: $Mobile) {
-//  .wrapper {
-//    padding-top: 35px;
-//  }
-//
-//  .title {
-//    padding-bottom: 30px;
-//    font-size: 16px;
-//    line-height: 24px;
-//  }
-//
-//  .email {
-//    width: 200px;
-//    height: 30px;
-//
-//    input {
-//      padding: 0 50px 0 10px;
-//      font-size: 12px;
-//    }
-//
-//    .button {
-//      width: 40px;
-//
-//      svg {
-//        width: 20px;
-//      }
-//    }
-//  }
-//
-//  .emailWrap {
-//
-//    .message {
-//      bottom: -25px;
-//      font-size: 12px;
-//    }
-//  }
-//
-//  .logo {
-//    padding-top: 30px;
-//    width: 60px;
-//    position: initial;
-//  }
-//
-//  .social {
-//    margin: 20px 0 30px;
-//    display: flex;
-//    justify-content: center;
-//
-//    a {
-//      margin-right: 8px;
-//
-//      svg {
-//        width: 37px;
-//        height: 37px;
-//      }
-//
-//      &:last-child {
-//        margin-right: 0;
-//      }
-//    }
-//  }
-//}
+@media screen and (max-width: $Tablet) {
+  .wrapper {
+
+    .container {
+      padding-bottom: (50px/$val);
+      width: (1366px/$val);
+
+      .contacts {
+        padding-top: (40px/$val);
+
+        .title {
+          font-size: (48px/$val);
+          line-height: (65px/$val);
+        }
+
+        .email {
+          padding: (30px/$val) 0 (25px/$val);
+
+          .mailImg {
+            width: (40px/$val);
+          }
+
+          a {
+            margin-left: (25px/$val);
+            font-size: (32px/$val);
+            line-height: (44px/$val);
+          }
+        }
+
+        .phone {
+
+          .phomeImg {
+            width: (40px/$val);
+          }
+
+          a {
+            margin-left: (25px/$val);
+            font-size: (32px/$val);
+            line-height: (44px/$val);
+          }
+        }
+      }
+
+      .social {
+
+        .title {
+          font-size: (32px/$val);
+          line-height: (38px/$val);
+        }
+
+        .links {
+          padding-top: (25px/$val);
+
+          .twitter,
+          .facebook,
+          .vk,
+          .telegram {
+            width: (75px/$val);
+          }
+
+          a {
+            margin-right: (32px/$val);
+          }
+        }
+      }
+    }
+
+    .copyright {
+      padding-bottom: (25px/$val);
+      font-size: (16px/$val);
+      line-height: (22px/$val);
+    }
+  }
+}
+
+@media screen and (max-width: $Mobile) {
+  .wrapper {
+    margin-top: 32px;
+    padding: 0 16px;
+
+    .container {
+      padding-bottom: 24px;
+      width: 100%;
+      max-width: 455px;
+
+      .contacts {
+        padding-top: 16px;
+
+        .title {
+          font-size: 14px;
+          line-height: 19px;
+        }
+
+        .email {
+          padding: 8px 0;
+
+          .mailImg {
+            width: 18px;
+          }
+
+          a {
+            margin-left: 8px;
+            font-size: 12px;
+            line-height: 16px;
+          }
+        }
+
+        .phone {
+          .phomeImg {
+            width: 18px;
+          }
+
+          a {
+            margin-left: 8px;
+            font-size: 14px;
+            line-height: 19px;
+          }
+        }
+      }
+
+      .social {
+        .title {
+          font-size: 14px;
+          line-height: 17px;
+        }
+
+        .links {
+          padding-top: 8px;
+
+          .twitter,
+          .facebook,
+          .vk,
+          .telegram {
+            width: 18px;
+          }
+
+          a {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+
+    .copyright {
+      padding-bottom: 8px;
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+}

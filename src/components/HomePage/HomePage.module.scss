@@ -1,20 +1,94 @@
 @import "src/assets/styles/global";
 
 .wrapper {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
   background: #1E1E20;
+
+  .neonImg {
+    position: absolute;
+    right: -125px;
+    top: 9%;
+    filter: blur(8px);
+  }
+
+  .circleImg {
+    position: absolute;
+    left: 35px;
+    top: 41%;
+    filter: blur(8px);
+  }
+
+  .triangleImg {
+    position: absolute;
+    left: 435px;
+    top: 47%;
+    filter: blur(8px);
+  }
+
+  .BImg {
+    position: absolute;
+    right: 140px;
+    top: 52%;
+    filter: blur(8px);
+  }
+
+  .AImg {
+    position: absolute;
+    right: 80px;
+    top: 63%;
+    filter: blur(8px);
+  }
+
+  .YImg {
+    position: absolute;
+    right: 630px;
+    top: 67%;
+    filter: blur(8px);
+  }
+
+  .XImg {
+    position: absolute;
+    right: 150px;
+    top: 72%;
+    filter: blur(8px);
+  }
+
+  .squareImg {
+    position: absolute;
+    right: 250px;
+    top: 77%;
+    filter: blur(8px);
+  }
+
+  .dotsImg {
+    position: absolute;
+    right: 50px;
+    top: 87%;
+    filter: blur(8px);
+  }
 }
-//
+
 //@media screen and (max-width: $Tablet) {
 //  .wrapper {
 //    padding-top: (190px/$val);
 //  }
 //}
-//
-//@media screen and (max-width: $Mobile) {
-//  .wrapper {
-//    padding-top: 43px;
-//  }
-//}
+
+@media screen and (max-width: $Mobile) {
+  .wrapper {
+    .neonImg,
+    .circleImg,
+    .triangleImg,
+    .BImg,
+    .AImg,
+    .YImg,
+    .XImg,
+    .squareImg,
+    .dotsImg {
+      display: none;
+    }
+  }
+}

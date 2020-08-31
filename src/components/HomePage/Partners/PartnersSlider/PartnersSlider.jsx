@@ -43,12 +43,18 @@ function SamplePrevArrow(props) {
 
 export default class PartnersSlider extends React.Component {
   render() {
+    const width = document.documentElement.clientWidth;
+    let slides = 4;
+    if (width < 700) {
+      slides = 2;
+    }
+
     const settings = {
       dots: false,
       infinite: true,
       speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToShow: slides,
+      slidesToScroll: slides,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
     };
@@ -63,10 +69,18 @@ export default class PartnersSlider extends React.Component {
             ))}
           </Slider>
         </div>
-        <img className={styles.leftTop} src={corner} alt="corner" />
-        <img className={styles.leftBot} src={corner} alt="corner" />
-        <img className={styles.rightTop} src={corner} alt="corner" />
-        <img className={styles.rightBot} src={corner} alt="corner" />
+        <div className={styles.leftTop}>
+          <img src={corner} alt="corner" />
+        </div>
+        <div className={styles.leftBot}>
+          <img src={corner} alt="corner" />
+        </div>
+        <div className={styles.rightTop}>
+          <img src={corner} alt="corner" />
+        </div>
+        <div className={styles.rightBot}>
+          <img src={corner} alt="corner" />
+        </div>
       </div>
     );
   }

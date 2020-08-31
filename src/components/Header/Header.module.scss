@@ -87,130 +87,36 @@
   }
 }
 
-//@media screen and (max-width: $Tablet) {
-//  .wrapper {
-//    height: (290px/$val);
-//  }
-//
-//  .container {
-//    padding: (25px/$val) (200px/$val) 0;
-//
-//    .logo {
-//      width: (81px/$val);
-//    }
-//
-//    .navmenu {
-//      padding-left: (40px/$val);
-//
-//      a {
-//        margin-left: (80px/$val);
-//        font-size: (30px/$val);
-//        line-height: (44px/$val);
-//      }
-//    }
-//  }
-//}
-//
-//@media screen and (max-width: $Mobile) {
-//  .wrapper {
-//    position: fixed;
-//    height: 43px;
-//    z-index: 99;
-//  }
-//
-//  .container {
-//    padding: 0 20px 0;
-//
-//    .logo {
-//      width: 32px;
-//    }
-//
-//    .navmenu {
-//      display: flex;
-//      flex-direction: column;
-//      justify-content: center;
-//      width: 100%;
-//      padding-left: 0;
-//      position: absolute;
-//      top: 0;
-//      left: 0;
-//      background: #221C2F;
-//      z-index: 100;
-//      transition: .5s;
-//      transform: scale(0);
-//
-//      a {
-//        margin-bottom: 20px;
-//        margin-left: 0;
-//        text-align: center;
-//        font-size: 16px;
-//        line-height: 40px;
-//
-//        &:first-child {
-//          margin-top: 50px;
-//        }
-//      }
-//    }
-//
-//    .navmenu.open {
-//      transform: scale(1);
-//    }
-//
-//    .humburgerMenu {
-//      display: flex;
-//      flex-direction: column;
-//      align-items: flex-end;
-//      justify-content: space-between;
-//      width: 32px;
-//      height: 12px;
-//      z-index: 101;
-//
-//      div {
-//        height: 2px;
-//        background: #ffffff;
-//        transition: .3s;
-//
-//        &:nth-child(1) {
-//          width: 21px;
-//        }
-//
-//        &:nth-child(2) {
-//          width: 18px;
-//        }
-//
-//        &:nth-child(3) {
-//          width: 15px;
-//        }
-//      }
-//    }
-//
-//    .humburgerMenu.open {
-//      div {
-//
-//        &:nth-child(1) {
-//          transform: rotate(-45deg) translate(-3px, 3px);
-//          width: 21px;
-//        }
-//
-//        &:nth-child(2) {
-//          //width: 18px;
-//          opacity: 0;
-//        }
-//
-//        &:nth-child(3) {
-//          transform: rotate(45deg) translate(-4px, -4px);
-//          width: 21px;
-//        }
-//      }
-//    }
-//  }
-//
-//  .closeWrap.open {
-//    display: block;
-//    position: fixed;
-//    top: 0;
-//    bottom: 0;
-//    left: 0;
-//    right: 0;
-//  }
-//}
+@media screen and (max-width: $Tablet) {
+  .wrapper {
+
+    .container {
+      width: (1366px/$val);
+
+      .logo {
+        width: (320px/$val);
+        padding: (10px/$val) 0;
+      }
+
+      .navmenu {
+
+        a {
+          margin-right: (24px/$val);
+          font-size: (16px/$val);
+          line-height: (19px/$val);
+
+          &:after {
+            bottom: (-4px/$val);
+            height: (2px/$val);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $Mobile) {
+  .wrapper {
+    display: none;
+  }
+}

@@ -6,7 +6,9 @@ import сircle from '../../../../assets/images/homepage/jury/circle.svg';
 const Member = ({ name, description, photo }) => (
   <div className={styles.wrapper}>
     <div className={styles.image}>
-      <img src={сircle} alt="сircle" />
+      <div className={styles.сircle}>
+        <img src={сircle} alt="сircle" />
+      </div>
       <div className={styles.photo}>
         <img src={photo} alt="photo" />
       </div>

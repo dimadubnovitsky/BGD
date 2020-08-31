@@ -6,6 +6,14 @@
   justify-content: flex-start;
   align-items: center;
 
+  .line {
+    width: 319px;
+
+    img {
+      width: 100%;
+    }
+  }
+
   .title {
     padding-left: 24px;
     font-family: $Gotham;
@@ -14,5 +22,35 @@
     font-size: 48px;
     line-height: 58px;
     color: #FFFFFF;
+  }
+}
+
+@media screen and (max-width: $Tablet) {
+  .wrapper {
+    .line {
+      width: (319px/$val);
+    }
+
+    .title {
+      padding-left: (24px/$val);
+      font-size: (48px/$val);
+      line-height: (58px/$val);
+    }
+  }
+}
+
+@media screen and (max-width: $Mobile) {
+  .wrapper {
+    padding-left: 16px;
+
+    .line {
+      width: 83px;
+    }
+
+    .title {
+      padding-left: 8px;
+      font-size: 24px;
+      line-height: 33px;
+    }
   }
 }

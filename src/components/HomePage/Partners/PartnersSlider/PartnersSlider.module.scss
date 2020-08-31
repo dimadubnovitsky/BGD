@@ -1,3 +1,5 @@
+@import "../../../../assets/styles/global";
+
 .wrapper {
   position: relative;
   width: 100%;
@@ -18,45 +20,70 @@
   }
 
   .leftTop {
+    width: 72px;
     position: absolute;
     top: 0;
     left: 0;
+
+    img {
+      width: 100%;
+    }
   }
 
   .leftBot {
+    width: 72px;
     position: absolute;
     bottom: 0;
     left: 0;
     transform: rotate(-90deg);
+
+    img {
+      width: 100%;
+    }
   }
 
   .rightTop {
+    width: 72px;
     position: absolute;
     top: 0;
     right: 0;
     transform: rotate(90deg);
+
+    img {
+      width: 100%;
+    }
   }
 
   .rightBot {
+    width: 72px;
     position: absolute;
     bottom: 0;
     right: 0;
     transform: rotate(180deg);
+
+    img {
+      width: 100%;
+    }
   }
 
   .nextArrow,
   .prevArrow {
+    width: 30px;
     position: absolute;
     top: 50%;
     cursor: pointer;
 
-    path {
-      transition: .3s;
-    }
+    svg {
+      width: 100%;
 
-    &:hover {
       path {
-        fill: #00FFE0;
+        transition: .3s;
+      }
+
+      &:hover {
+        path {
+          fill: #00FFE0;
+        }
       }
     }
   }
@@ -72,25 +99,80 @@
   }
 }
 
-//@media screen and (max-width: $Mobile) {
-//  .wrapper {
-//    padding-bottom: 30px;
-//  }
-//
-//  .title {
-//    font-size: 27px;
-//    line-height: 40px;
-//  }
-//
-//  .video {
-//    align-self: center;
-//    margin-top: 20px;
-//    margin-right: 0;
-//
-//
-//    iframe {
-//      width: 260px;
-//      height: 143px;
-//    }
-//  }
-//}
+@media screen and (max-width: $Tablet) {
+  .wrapper {
+    margin-top: (100px/$val);
+    padding: (50px/$val);
+
+    .container {
+
+      img {
+        width: (300px/$val);
+        height: (360px/$val);
+      }
+    }
+
+    .leftTop {
+      width: (72px/$val);
+    }
+
+    .leftBot {
+      width: (72px/$val);
+    }
+
+    .rightTop {
+      width: (72px/$val);
+    }
+
+    .rightBot {
+      width: (72px/$val);
+    }
+
+    .nextArrow,
+    .prevArrow {
+      width: (30px/$val);
+    }
+
+    .nextArrow {
+      right: (-50px/$val);
+    }
+
+    .prevArrow {
+      left: (-50px/$val);
+    }
+  }
+}
+
+@media screen and (max-width: $Mobile) {
+  .wrapper {
+    margin-top: 32px;
+    padding: 0 16px;
+
+    .container {
+      padding: 0 8px;
+      width: 100%;
+      max-width: 455px;
+
+      img {
+        width: 130px;
+        height: 155px;
+        margin: 0 auto;
+      }
+    }
+
+    .leftTop,
+    .leftBot,
+    .rightTop,
+    .rightBot {
+      display: none;
+    }
+
+    .nextArrow {
+      right: -24px;
+    }
+
+    .prevArrow {
+      left: -24px;
+    }
+  }
+}
