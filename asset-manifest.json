@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/BGD/static/css/main.230e4e7b.chunk.css",
-    "main.js": "/BGD/static/js/main.d7f2b41c.chunk.js",
-    "main.js.map": "/BGD/static/js/main.d7f2b41c.chunk.js.map",
+    "main.css": "/BGD/static/css/main.3cde9688.chunk.css",
+    "main.js": "/BGD/static/js/main.31d01346.chunk.js",
+    "main.js.map": "/BGD/static/js/main.31d01346.chunk.js.map",
     "runtime-main.js": "/BGD/static/js/runtime-main.71e812f2.js",
     "runtime-main.js.map": "/BGD/static/js/runtime-main.71e812f2.js.map",
     "static/css/2.52b7a8d6.chunk.css": "/BGD/static/css/2.52b7a8d6.chunk.css",
     "static/js/2.6e976bef.chunk.js": "/BGD/static/js/2.6e976bef.chunk.js",
     "static/js/2.6e976bef.chunk.js.map": "/BGD/static/js/2.6e976bef.chunk.js.map",
     "index.html": "/BGD/index.html",
-    "precache-manifest.71fad186d6fd5ae629990b140a49badd.js": "/BGD/precache-manifest.71fad186d6fd5ae629990b140a49badd.js",
+    "precache-manifest.cc175dc0b4c974da1ec4c3ec82e0a10b.js": "/BGD/precache-manifest.cc175dc0b4c974da1ec4c3ec82e0a10b.js",
     "service-worker.js": "/BGD/service-worker.js",
     "static/css/2.52b7a8d6.chunk.css.map": "/BGD/static/css/2.52b7a8d6.chunk.css.map",
-    "static/css/main.230e4e7b.chunk.css.map": "/BGD/static/css/main.230e4e7b.chunk.css.map",
+    "static/css/main.3cde9688.chunk.css.map": "/BGD/static/css/main.3cde9688.chunk.css.map",
     "static/js/2.6e976bef.chunk.js.LICENSE.txt": "/BGD/static/js/2.6e976bef.chunk.js.LICENSE.txt",
     "static/media/A.svg": "/BGD/static/media/A.55f08368.svg",
     "static/media/B.svg": "/BGD/static/media/B.c861dda4.svg",
@@ -65,7 +65,7 @@
     "static/media/title.svg": "/BGD/static/media/title.d766aa92.svg",
     "static/media/to_ka.jpg": "/BGD/static/media/to_ka.aa50cbc6.jpg",
     "static/media/triangle.svg": "/BGD/static/media/triangle.b413bb3a.svg",
-    "static/media/twitter.svg": "/BGD/static/media/twitter.fc8e1270.svg",
+    "static/media/twitter.svg": "/BGD/static/media/twitter.0afa45aa.svg",
     "static/media/ukraine_g_n.png": "/BGD/static/media/ukraine_g_n.aa497438.png",
     "static/media/vk.svg": "/BGD/static/media/vk.df1cd4d2.svg",
     "static/media/wo_pa.jpg": "/BGD/static/media/wo_pa.23aeaea1.jpg",
@@ -75,7 +75,7 @@
     "static/js/runtime-main.71e812f2.js",
     "static/css/2.52b7a8d6.chunk.css",
     "static/js/2.6e976bef.chunk.js",
-    "static/css/main.230e4e7b.chunk.css",
-    "static/js/main.d7f2b41c.chunk.js"
+    "static/css/main.3cde9688.chunk.css",
+    "static/js/main.31d01346.chunk.js"
   ]
 }

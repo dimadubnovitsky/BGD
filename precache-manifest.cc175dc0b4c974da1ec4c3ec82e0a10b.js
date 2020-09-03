@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c7f4ede4788cd38be587d186efe639b",
+    "revision": "e4a942bf09dbad5be47debb4fe824503",
     "url": "/BGD/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BGD/static/css/2.52b7a8d6.chunk.css"
   },
   {
-    "revision": "b86206719e174d68c5a9",
-    "url": "/BGD/static/css/main.230e4e7b.chunk.css"
+    "revision": "57a9292520960a49c163",
+    "url": "/BGD/static/css/main.3cde9688.chunk.css"
   },
   {
     "revision": "5f17e26f415a2c1d1a1e",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BGD/static/js/2.6e976bef.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b86206719e174d68c5a9",
-    "url": "/BGD/static/js/main.d7f2b41c.chunk.js"
+    "revision": "57a9292520960a49c163",
+    "url": "/BGD/static/js/main.31d01346.chunk.js"
   },
   {
     "revision": "7b2f63f785e2484d66d5",
@@ -300,8 +300,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BGD/static/media/triangle.b413bb3a.svg"
   },
   {
-    "revision": "fc8e1270c747b2ac33e23dfaebd7bf94",
-    "url": "/BGD/static/media/twitter.fc8e1270.svg"
+    "revision": "0afa45aaec03c6676e7e59b42a8ad09a",
+    "url": "/BGD/static/media/twitter.0afa45aa.svg"
   },
   {
     "revision": "aa497438810b9ece37cfbd78825e734e",
