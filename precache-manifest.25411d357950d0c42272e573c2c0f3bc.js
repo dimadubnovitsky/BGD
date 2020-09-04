@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "012c0f76bf54ae283e69286c2a4e24e2",
+    "revision": "22eb0e4a7618c190fabb2b2cc00a4c9e",
     "url": "/BGD/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BGD/static/css/2.52b7a8d6.chunk.css"
   },
   {
-    "revision": "bf1d7387c5cbc1bd8962",
-    "url": "/BGD/static/css/main.6e8a28af.chunk.css"
+    "revision": "785b905019c09db1e7ff",
+    "url": "/BGD/static/css/main.93a276e0.chunk.css"
   },
   {
     "revision": "4da4ae194fe2a6595eed",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BGD/static/js/2.5333e5a6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bf1d7387c5cbc1bd8962",
+    "revision": "785b905019c09db1e7ff",
     "url": "/BGD/static/js/main.4ea950a4.chunk.js"
   },
   {
@@ -204,6 +204,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BGD/static/media/mi_bo.9adf0da9.jpg"
   },
   {
+    "revision": "6fb1b5623e528e27c18658fecf5ee0ee",
+    "url": "/BGD/static/media/montserrat-v14-latin-600.6fb1b562.woff2"
+  },
+  {
+    "revision": "7c839d15a6f54e7025ba8c0c4b333e8f",
+    "url": "/BGD/static/media/montserrat-v14-latin-600.7c839d15.woff"
+  },
+  {
+    "revision": "8102c4838f9e3d08dad644290a9cb701",
+    "url": "/BGD/static/media/montserrat-v14-latin-regular.8102c483.woff"
+  },
+  {
+    "revision": "bc3aa95dca08f5fee5291e34959c27bc",
+    "url": "/BGD/static/media/montserrat-v14-latin-regular.bc3aa95d.woff2"
+  },
+  {
     "revision": "422206581d05d8369d523ac27c6feea1",
     "url": "/BGD/static/media/na_st.42220658.jpg"
   },
@@ -214,14 +230,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e69dc5626adefc59e0408aa2a495a2aa",
     "url": "/BGD/static/media/ni_ar.e69dc562.jpg"
-  },
-  {
-    "revision": "98ce4fe0e6b2b20977bc8c8fd8dc6709",
-    "url": "/BGD/static/media/nunito-v13-latin_cyrillic-300.98ce4fe0.woff"
-  },
-  {
-    "revision": "e569045a16e19bc38c7354baad37680b",
-    "url": "/BGD/static/media/nunito-v13-latin_cyrillic-300.e569045a.woff2"
   },
   {
     "revision": "6bb7010869620273be79416076f4b52d",
